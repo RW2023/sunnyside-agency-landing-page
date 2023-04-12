@@ -1,78 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&family=Fraunces:wght@700;900&display=swap");
+
 :root {
-    /* primary */
-    --soft-red: hsl(7, 99%, 70%);
-    --yellow: hsl(51, 100%, 49%);
-    --dark-desaturated-cyan: hsl(167, 40%, 24%);
-    --dark-blue: hsl(198, 62%, 26%);
-    --dark-moderate-cyan: hsl(168, 34%, 41%);
-    /* secondary */
-    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
-    --very-dark-grayish-blue: hsl(213, 9%, 39%);
-    --dark-grayish-blue: hsl(232, 10%, 55%);
-    --grayish-blue: hsl(210, 4%, 67%);
-    --white: hsl(0, 0%, 100%);
+  /* primary */
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --dark-moderate-cyan: hsl(168, 34%, 41%);
+  /* secondary */
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
 }
 
 /* CSS Reset */
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 /* End of CSS Reset */
 
 /* Style the header and nav */
-body{
-    background-color: var(--white);
+body {
+  background-color: var(--white);
 }
-
-
 
 /* Style the nav */
 .nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 60px;
-    background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: var(--white);
 }
 
 /* Style the unordered list */
 .nav ul {
-    display: flex;
-    list-style-type: none;
+  display: flex;
+  list-style-type: none;
 }
 
 /* Style list items */
 .nav li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 /* Style anchor tags as buttons */
 .nav a {
-    display: inline-block;
-    padding: 6px 12px;
-    color: var(--white);
-    text-decoration: none;
-    font-size: 18px;
-    background-color: var(--dark-blue);
-    border: 1px solid var(--dark-desaturated-cyan);
-    border-radius: 5px;
-    transition: background-color 0.3s, border-color 0.3s;
+  display: inline-block;
+  padding: 6px 12px;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 18px;
+  background-color: var(--dark-blue);
+  border: 1px solid var(--dark-desaturated-cyan);
+  border-radius: 5px;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 /* Add hover effect to anchor tags */
 .nav a:hover {
-    background-color: var(--white);
-    border-color: var(--dark-blue);
-    color: var(--dark-blue);
+  background-color: var(--white);
+  border-color: var(--dark-blue);
+  color: var(--dark-blue);
 }
 
-  .attribution {
-      font-size: 11px;
-      text-align: center;
-  }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
 
+/* ========== STYLE THE HEADER ========== */
+
+.header {
+  margin-inline: auto;
+  height: 100vh;
+  min-height: 30rem;
+  max-width: 1300px;
+  width: 100%;
+  background: url("./images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.container {
+  width: 100%;
+  padding: 0 100px;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__content h1 {
+  font-size: 2.5rem;
+  color: white;
+  position: absolute;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font: 900;
+  top: 5rem;
+  left: 50%;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+}
+
+.header__content span {
+  position: absolute;
+  top: 12rem;
+  left: 50%;
+  color: white;
+  font-size: 3rem;
+  transform: translate(-50%, -50%);
+}
+
+.main__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  max-width: 1300px;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.left__section {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.section__content {
+  width: 70%;
+}
+
+.section__content h1,
+h2 {
+  font-family: "Fraunces", serif;
+  color: var(--very-dark-desaturated-blue);
+}
+
+.section__content h2 {
+  font-size: 1.5em;
+}
+
+.section__content p {
+  font-family: "Barlow" sans-serif;
+  font-size: 1em;
+  font-family: "Barlow", serif;
+  font: 600;
+  color: var(--very-dark-grayish-blue);
+}
+
+.section__content .learn__more {
+  text-decoration: none;
+  font-family: "Fraunces";
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  position: relative;
+  color: var(--very-dark-desaturated-blue);
+}
+
+.section__content .learn__more::after {
+  content: "";
+  display: block;
+  border-top: 5px solid var(--yellow);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0px;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.section__content .red::after {
+  content: "";
+  display: block;
+  border-top: 5px solid var(--soft-red);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0px;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.right__section {
+  height: auto;
+  width: 50%;
+  display: flex;
+  /* position: relative; */
+}
+
+.right__section img {
+  max-width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+.base {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
+}
+
+.left__lower-section,
+.right__lower-section {
+  display: flex;
+  position: relative;
+  width: 50%;
+}
+
+.left__lower-section img,
+.right__lower-section img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
