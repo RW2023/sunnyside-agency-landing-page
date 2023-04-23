@@ -772,4 +772,55 @@ since they all have similar styling to save time  */
 }
 }
 
+/* Testimonials starts here */
+.testimonials {
+    padding: 6rem;
+    text-align: center;
+    background: hsla(42, 92%, 90%, 0.192);
+}
 
+.testimonials h3 {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: hsl(210, 4%, 67%);
+    margin-bottom: 3rem;
+    letter-spacing: .3rem;
+    font-family: 'Fraunces', serif;
+}
+
+.testimonials .testimonial-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.testimonials .testimonial-row .testimonial-col {
+    flex-basis: 31%;
+}
+
+.testimonials .testimonial-row .testimonial-col img {
+    border-radius: 50%;
+    width: 3.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.testimonials .testimonial-row .testimonial-col p {
+    color: hsl(198, 62%, 26%);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    font-family: 'Barlow', sans-serif;
+}
+
+.testimonials .testimonial-row .testimonial-col .client-name h4 {
+    font-weight: 900;
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+    font-family: 'Fraunces', serif;
+}
+
+.testimonials .testimonial-row .testimonial-col .client-name p {
+    font-size: .8rem;
+    margin-bottom: 0;
+    font-family: 'Barlow', sans-serif;
+}
