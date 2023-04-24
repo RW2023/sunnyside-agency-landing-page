@@ -402,30 +402,36 @@ since they all have similar styling to save time  */
 }
 
 
-
+/* bottom section starts */
 .bottom_section {
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  width: 100%;
-}
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  @media(max-width: 480px) {
+      .image-wrapper {
+          width: calc(50%);
+        } 
+  }
+  
+  @media(min-width: 480px) {
+      .image-wrapper {
+          width: calc(25%);
+        } 
+  }
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+  /* bottom section ends */
+  
 
-@media(max-width: 480px) {
-    .image-wrapper {
-        width: 100%;
-      } 
-}
-
-@media(min-width: 480px) {
-    .image-wrapper {
-        width: 100%;
-      } 
-}
-.image-wrapper img {
-  width: 100%;
-}
-/* bottom section ends */
 
 /* footer section  */
 footer{
